@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(206, 199, 227);
+    font-family: "Myfont", Super normal;
+}
+
+#first {
+    position: relative;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "a b c";
+    background-color: rgb(164, 154, 194);
+}
+
+#second {
+    display: grid;
+    grid-template-areas: "d e e";
+}
+
+#icon {
+    grid-area: "a";
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 60px;
+    bottom: 0px;
+    margin: auto;
+}
+
+#name {
+    grid-area: "b";
+    width: 50%;
+    position: relative;
+    left: 40%;
+    border-right-style: solid;
+    border-right-width: 7px;
+    margin: auto;
+    min-width: 170px;
+    z-index: 2;
+}
+
+#profession {
+    grid-area: "c";
+    width: 50%;
+    margin: auto;
+    min-width: 170px;
+}
+
+div {
+    margin: 2px;
+    padding: 50px;
+}
+
+.info2 {
+    position: relative;
+    right: 50px;
+}
+
+#line {
+
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 70px;
+}
+
+#call {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 170px;
+}
+
+#phone {
+    display: flex;
+    align-items: center;
+}
+
+.modified {
+    border: none;
+}
+
+@font-face {
+  font-family: "Myfont";
+  src: local("SuperNormal-xRoj5.ttf");
+}
+
+#switch {
+    position:absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+body.dark {
+    background-color: rgb(33, 28, 30);
+    color: grey;
+}
+
+#first.dark {
+    background-color: rgb(54, 46, 49);
+}
+
+a {
+    color: black;
+}
+
+#fblink.dark {
+    color: grey;
+}
+
+#fblink:hover {
+    -webkit-text-stroke: 1px rgb(96, 69, 120);
+}
+
+#prograss {
+    display: flex;
+}
+
+#pr1, #pr2, #pr3 {
+    float: left;
+}
+
+.circle{
+    border: 4px solid;
+    border-image: linear-gradient(rgb(164, 154, 194) 10%, black auto) 1;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    margin: 15px;
+}
+
+.circle h4 {
+    position: relative;
+    bottom: 25px;
+    font-size: 150%;
+}
